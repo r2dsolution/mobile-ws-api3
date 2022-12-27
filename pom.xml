@@ -9,15 +9,17 @@
    <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.1-SNAPSHOT</version>
+		<version>2.7.7</version>
 	</parent>
     <properties>
-
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<wrapper.version>1.0.27.RELEASE</wrapper.version>
 		<aws-lambda-events.version>3.9.0</aws-lambda-events.version>
-		<spring-cloud-function.version>4.0.1-SNAPSHOT</spring-cloud-function.version>
+		<spring-cloud-function.version>3.2.8</spring-cloud-function.version>
+		<spring-boot.version>2.7.7</spring-boot.version>
     </properties>
 
     <dependencies>
@@ -44,6 +46,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
+			<version>${spring-boot.version}</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
